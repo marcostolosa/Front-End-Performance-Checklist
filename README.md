@@ -217,17 +217,17 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   - 📖 [Pré-carregamento de conteúdo com rel="preload"](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content) - _(título original:'loadCSS by filament group', em inglês)_
   - 📖 [Pré-carregamento: Pra que serve? — Smashing Magazine](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/) - _(título original:'loadCSS by filament group', em inglês)_
 
-- [ ] **Length of CSS classes:** ![low] The length of your classes can have an (slight) impact on your HTML and CSS files (eventually).
+- [ ] **Tamanho das classes CSS:** ![low] O tamanho das suas classes pode causar (baixo) impacto nos seus arquivos HTML e CSS (eventualmente).
 
-  _Why:_
+  _Por que:_
 
-  > Even performance impacts can be disputable, taking a decision on a naming strategy regarding your project can have a substantial impact on the maintainability of your stylesheets. If you are using BEM, in some cases, you can ended up with classes having more characters than need. It's always important to choose wisely your names and namespaces.
+  > Até mesmo os impactos de performance podem ser contestados, tomar uma decisão sobre a estratégia de nomenclatura do seu projeto pode ter um impacto não trivial na manutenção das suas folhas de estilo. Se estiver usando BEM, em alguns casos, você pode acabar com classes que possuem mais caracteres do que precisam. É sempre importante escolher com sabedoria os nomes e _namespaces_.
 
-  _How:_
+  _Como:_
 
-  > ⁃ Setting a limit in terms of number of characters could be interesting for some people, but ensuring that you broke down your website in components can help to reduce the amount of classes (and declarations) and the length of your classes.
+  > ⁃ Definir um limite em termos de número de caracteres pode ser interressante para algumas pessoas, mas garantir que você desmembrou o seu website em componentes pode ajudar a reduzir a quantidade de classes (e declarações) e o tamanho das suas classes.
 
-  - 🛠 [long vs short class · jsPerf](https://jsperf.com/long-vs-short-class)
+  - 🛠 [classe longa vs curta · jsPerf](https://jsperf.com/long-vs-short-class) - _(título original:'long vs short class', em inglês)_
 
 - [ ] **Unused CSS:** ![medium] Remove unused CSS selectors.
 
