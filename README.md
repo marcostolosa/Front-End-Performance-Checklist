@@ -153,7 +153,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
   - 📖 [Ordenando seus estilos e scripts para o carregamento da página](https://varvy.com/pagespeed/style-script-order.html) - _(título original: 'Ordering your styles and scripts for pagespeed', em inglês)_
 
-- [ ] **Reduza a quantidade de iframes:** ![high] Somente use iframesse não há nenhuma outra possibilidade técnica. Evite tanto quanto o possível utilizar iframes.
+- [ ] **Reduza a quantidade de iframes:** ![high] Somente use iframes se não há nenhuma outra possibilidade técnica. Evite tanto quanto o possível utilizar iframes.
 
 **[⬆ Topo](#table-of-contents)**
 
@@ -161,61 +161,61 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 ![css]
 
-- [ ] **Minification:** ![high] All CSS files are minified, comments, white spaces and new lines are removed from production files.
+- [ ] **Minificação:** ![high] Todos os arquivos CSS está minificado, comentários, _white spaces_ e novas linhas são removidas dos arquivos de produção.
 
-  _Why:_
+  _Por que:_
 
-  > When CSS files are minified, the content is loaded faster and less data are send to the client. It's important to always minified CSS files in production. It is beneficial for the user as it is for any business who wants to lower bandwidth costs and lower resource usage.
+  > Quando os arquivos CSS são minificados, o conteúdo é carregado mais rapidamente e menos dados são enviados ao cliente. É importante sempre minificar os arquivos CSS em produção.Isso é benéfico para o usuário e também para negócios que desejam dimminuir o custo de banda e reduzir o uso de recursos.
 
-  _How:_
+  _Como:_
 
-  > ⁃ Use tools to minify your files automatically before or during your build or your deployment.
+  > ⁃ Use ferramentas para minificar seus arquivos automaticamente antes ou durante o _build_ ou _deploy_.
 
-  - 🛠 [cssnano: A modular minifier based on the PostCSS ecosystem. - cssnano](https://cssnano.co/)
+  - 🛠 [cssnano: Um minificador modular baseado no ecossistema PostCSS](https://cssnano.co/) - _(título original: 'cssnano: A modular minifier based on the PostCSS ecosystem.', em inglês)_
   - 🛠 [@neutrinojs/style-minify - npm](https://www.npmjs.com/package/@neutrinojs/style-minify)
 
-- [ ] **Concatenation:** ![medium] CSS files are concatenated in a single file _(Not always valid for HTTP/2)_.
+- [ ] **Concatenação:** ![medium] Arquivos CSS são concatenados em um único arquivo _(Nem sempre é válido para HTTP/2)_.
 
   ```html
-  <!-- Not recommended -->
+  <!-- Não recomendado -->
   <script src="foo.js"></script>
   <script src="ajax.js"></script>
 
-  <!-- Recommended -->
+  <!-- Recomendado -->
   <script src="combined.js"></script>
   ```
 
-  _Why:_
+  _Por que:_
 
-  > If you are still using HTTP/1, you may need to still concatenate your files, it's less true if your server use HTTP/2 (tests should be made).
+  > Se ainda estiver usando HTTP/1, você talvez precise concatenar seus arquivos, é menos indicado se o seu servidor usa HTTP/2 (é necessário testar).
 
-  _How:_
+  _Como:_
 
-  > ⁃ Use online tool or any plugin before or during your build or your deployment to concatenate your files.
-  > ⁃ Ensure, of course, that concatenation does not break your project.
+  > ⁃ Use uma ferramenta online ou algum plugin antes ou durante o _build_ ou _deploy_ do seu projeto para concatenar arquivos.
+  > ⁃ Certifique-se, claro, que a concatenação não quebre o seu projeto.
 
-  - 📖 [HTTP: Optimizing Application Delivery - High Performance Browser Networking (O'Reilly)](https://hpbn.co/optimizing-application-delivery/#optimizing-for-http2)
-  - 📖 [Performance Best Practices in the HTTP/2 Era](https://deliciousbrains.com/performance-best-practices-http2/)
+  - 📖 [HTTP: Otimizando a Entrega de Aplicações - Alta performance em Conexão do Navegador(O'Reilly)](https://hpbn.co/optimizing-application-delivery/#optimizing-for-http2) - _(título original: "HTTP: Optimizing Application Delivery - High Performance Browser Networking (O'Reilly)', em inglês)_
+  - 📖 [Melhores Práticas de Performance na Era do HTTP/2](https://deliciousbrains.com/performance-best-practices-http2/) _(título original: 'Performance Best Practices in the HTTP/2 Era', em inglês)_
 
-- [ ] **Non-blocking:** ![high] CSS files need to be non-blocking to prevent the DOM from taking time to load.
+- [ ] **Não-obstrusivo:** ![high] Arquivos CSS precisam ser não-obstrusivos para prevenir que o DOM demore de carregar .
 
   ```html
   <link rel="preload" href="global.min.css" as="style" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="global.min.css"></noscript>
   ```
 
-  _Why:_
+  _Por que:_
 
-  > CSS files can block the page load and delay the rendering of your page. Using `preload` can actually load the CSS files before the browser starts showing the content of the page.
+  > Arquivos CSS podem bloquear o carregamento da página e atrasar a renderização da sua página. Usar `preload` pode carregar os arquivos CSS antes que o navegador comece a mostrar o conteúdo da página.
 
-  _How:_
+  _Como:_
 
-  > ⁃ You need to add the `rel` attribute with the `preload` value and add `as="style"` on the `<link>` element.
+  > ⁃ Você precisa adicionar o atributo `rel` com o valor `preload` e incluir `as="style"` no elemento `<link>`.
 
-  - 📖 [loadCSS by filament group](https://github.com/filamentgroup/loadCSS)
-  - 📖 [Example of preload CSS using loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
-  - 📖 [Preloading content with rel="preload"](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content)
-  - 📖 [Preload: What Is It Good For? — Smashing Magazine](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/)
+  - 📖 [loadCSS por filament group](https://github.com/filamentgroup/loadCSS)
+  - 📖 [Exemplo de pré-carregamento de CSS usando loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf) - _(título original:'loadCSS by filament group', em inglês)_
+  - 📖 [Pré-carregamento de conteúdo com rel="preload"](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content) - _(título original:'loadCSS by filament group', em inglês)_
+  - 📖 [Pré-carregamento: Pra que serve? — Smashing Magazine](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/) - _(título original:'loadCSS by filament group', em inglês)_
 
 - [ ] **Length of CSS classes:** ![low] The length of your classes can have an (slight) impact on your HTML and CSS files (eventually).
 
