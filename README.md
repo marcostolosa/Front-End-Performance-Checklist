@@ -229,47 +229,47 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
   - 🛠 [classe longa vs curta · jsPerf](https://jsperf.com/long-vs-short-class) - _(título original:'long vs short class', em inglês)_
 
-- [ ] **Unused CSS:** ![medium] Remove unused CSS selectors.
+- [ ] **CSS inutilizado:** ![medium] Remova seletores CSS inutlizados.
 
-  _Why:_
+  _Por que:_
 
-  > Removing unused CSS selectors can reduce the size of your files and then speed up the load of your assets.
+  > Remover seletores CSS inutilizados pode reduzir o peso dos seus arquivos e acelerar o carregamento dos seus _assets_.
 
-  _How:_
+  _Como:_
 
-  > ⁃ ⚠️ Always check if the framework CSS you want to use don't already has a reset / normalize code included. Sometimes you may not need everything that is inside your reset / normalize file.
+  > ⁃ ⚠️ Sempre verifique se o framework de CSS que você quer usar já não possui código de _reset/normalize_. Às vezes você pode não precisar de tudo que está incluído no arquivo de _reset/normalize_.
 
   - 🛠 [UnCSS Online](https://uncss-online.com/)
   - 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
   - 🛠 [PurgeCSS](https://github.com/FullHuman/purgecss)
-  - 🛠 [Chrome DevTools Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
+  - 🛠 [Cobertura das Ferrramentas de Desenvolvedor do Chrome](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) - _(título original: 'Chrome DevTools Coverage', em inglês)_
 
-* [ ] **CSS Critical:** ![high] The CSS critical (or "above the fold") collects all the CSS used to render the visible portion of the page. It is embedded before your principal CSS call and between `<style></style>` in a single line (minified if possible).
+* [ ] **CSS Crítico:** ![high] O CSS crítico (ou "sobre a dobra") contém todo o CSS usado para renderizar a parte visível da página. ele é incorporado antes da chamada principal do seu CSS e entre `<style></style>` numa única linha (minificado se possível).
 
-  _Why:_
+  _Por que:_
 
-  > Inlining critical CSS help to speed up the rendering of the web pages reducing the number of requests to the server.
+  > Deixar o CSS crítico _inline_ ajuda a acelerar a renderização de páginas web reduzindo o número de requisições ao servidor.
 
-  _How:_
+  _Como:_
 
-  > ⁃ Generate the CSS critical with online tools or using a plugin like the one that Addy Osmani developed.
+  > ⁃ Gere o CSS crítico com ferramentas online ou usando um plugin como o que Addy Osmani desenvolveu.
 
-  - 📖 [Understanding Critical CSS](https://www.smashingmagazine.com/2015/08/understanding-critical-css/)
-  - 🛠 [Critical by Addy Osmani on GitHub](https://github.com/addyosmani/critical) automates this.
-  - 📖 [Inlining critical CSS for better web performance | Go Make Things](https://gomakethings.com/inlining-critical-css-for-better-web-performance/)
-  - 📖 [Critical Path CSS Generator - Prioritize above the fold content :: SiteLocity](https://www.sitelocity.com/critical-path-css-generator)
+  - 📖 [Entendendo o CSS Crítico](https://www.smashingmagazine.com/2015/08/understanding-critical-css/) - _(título original: 'Understanding Critical CSS', em inglês)_
+  - 🛠 [Critical por Addy Osmani no GitHub](https://github.com/addyosmani/critical) automatiza isso.
+  - 📖 [Deixando o CSS crítico _inline_ para ter melhor performance na web | Go Make Things](https://gomakethings.com/inlining-critical-css-for-better-web-performance/) - _(título original: 'Inlining critical CSS for better web performance', em inglês)_
+  - 📖 [Gerador de CSS de Caminho Crítico Critical - Priorize contéudo acima da dobra :: SiteLocity](https://www.sitelocity.com/critical-path-css-generator) - _(título original: ' Path CSS Generator - Prioritize above the fold content', em inglês)_
 
-- [ ] **Embedded or inline CSS:** ![high] Avoid using embed or inline CSS inside your `<body>` _(Not valid for HTTP/2)_
+- [ ] **CSS incorporado ou _inline_:** ![high] Evite usar CSS incorporado ou _inline_ dentro do seu `<body>` _(não válido para HTTP/2)_
 
-  _Why:_
+  _Por que:_
 
-  > One of the first reason it's because it's a good practice to **separate content from design**. It also help you have a more maintainable code and keep your site accessible. But regarding performance, it's simply because it decrease the file-size of your HTML pages and the load time.
+  > Uma das principais razões é que é boa prática **separar conteúdo de design**. Também te ajuda a ter um código mais sustentável e mantém o seu site aceesível. Mas com relação a performance, é simplesmente por diminuir o peso do arquivo das suas páginas HTML e tempo de carregamento.
 
-  _How:_
+  _Como:_
 
-  > ⁃ Always use external stylesheets or embed CSS in your `<head>` (and follow the others CSS performance rules)
+  > ⁃ Sempre use folhas de estilo externas ou incorpore o CSS no seu `<head>` (e siga as outras regras de performance).
 
-  - 📖 [Observe CSS Best Practices: Avoid CSS Inline Styles](https://www.lifewire.com/avoid-inline-styles-for-css-3466846)
+  - 📖 [Observe as Melhores Práticas de CSS: Evite Usar Estilos CSS _Inline_](https://www.lifewire.com/avoid-inline-styles-for-css-3466846) - _(título original: 'Observe CSS Best Practices: Avoid CSS Inline Styles', em inglês)_
 
 - [ ] **Analyse stylesheets complexity:** ![high] Analyzing your stylesheets can help you to flag issues, redundancies and duplicate CSS selectors.
 
