@@ -52,7 +52,7 @@ Para cada regra, você vai encontrar um parágrafo explicando _por que_ essa reg
 Todos os itens no **Checklist de Performance Front-End** são essenciais para alcançar o melhor resultado de performance mas você encontrará um indicador para te auxiliar a eventualmente priorizar algumas regras perante outras. Existem 3 níveis de prioridade / impacto:
 
 - ![Baixo][low] significa que o item tem **pouco** impacto e prioridade no seu projeto.
-- ![Médio][medium] significa que o item tem **médio** impacto e prioridade no seu projeto.Você não deve evitar resolver esse item.
+- ![Médio][medium] significa que o item tem **médio** impacto e prioridade no seu projeto. Você não deve evitar resolver esse item.
 - ![Alto][high] significa que o item tem **alto** impacto e prioridade no seu projeto. Você não pode evitar seguir a regra e aplicar as correções apropriadas.
 
 ### Ferramentas de performance
@@ -80,7 +80,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 ![html]
 
-- [ ] **HTML Minificado:** ![medium] O código HTML está minificado, commentários, _white spaces_ e novas linhas são removidas dos arquivos de produção.
+- [ ] **HTML Minificado:** ![medium] O código HTML está minificado, comentários, _white spaces_ e novas linhas são removidas dos arquivos de produção.
 
   _Por que:_
 
@@ -93,7 +93,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   - 🛠 [Minifcador HTML | Minify Code](http://minifycode.com/html-minifier/)
   - 📖 [Experiências com com Minficador HTML — Perfection Kills](http://perfectionkills.com/experimenting-with-html-minifier/#use_short_doctype) - _(título original:'Experimenting with HTML minifier', em inglês)_
 
-- [ ] **Remover comentários desnecssários:** ![low] Garante que os comentários serão removidos de suas páginas.
+- [ ] **Remover comentários desnecessários:** ![low] Garanta que os comentários serão removidos de suas páginas.
 
   _Por que:_
 
@@ -121,7 +121,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
   _Por que:_
 
-  > Atributos Type não são necessários já que o HTML5 supõe text/css e text/javascript por padrão.Código inutilizado deve ser removido quando não forem usados no seu website ou aplicação por deixarem as páginas mais pesadas.
+  > Atributos Type não são necessários já que o HTML5 supõe text/css e text/javascript por padrão. Código inutilizado deve ser removido quando não forem usados no seu website ou aplicação por deixarem as páginas mais pesadas.
 
   _Como:_
 
@@ -129,7 +129,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
   - 📖 [A Tag de Script | CSS-Tricks](https://css-tricks.com/the-script-tag/) - _(título original: 'The Script Tag', em inglês)_
 
-- [ ] **Sempre coloque as tags de css antes das de JavaScript:** ![high] Certifique-se de que o seu CSS sempre é carregado antes de ter código JavaScript.
+- [ ] **Sempre coloque as _tags_ de css antes das de JavaScript:** ![high] Certifique-se de que o seu CSS sempre é carregado antes de ter código JavaScript.
 
   ```html
   <!-- Não recomendado -->
