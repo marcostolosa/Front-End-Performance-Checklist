@@ -43,36 +43,36 @@
 
 ## Introdução
 
-Performance is a huge subject, but it's not always a "Pback-end" or an "admin" subject: it's a Front-End responsibility too. The Front-End Performance Checklist is an exhausted list of elements you should check or at least be aware of, as a Front-End developer and apply to your project (personal and professional).
+Performance é um assunto gigante, mas nem sempre é um assunto de "back-end" ou "admin": também é uma responsabilidade do Front-End. O Checklist de Performance Front-End é uma lista extensa de elementos que você deve conferir ou ao menos estar ciente como um desenvolvedor Front-End e aplicar em seu projeto (pessoal ou profissional).
 
 ### Como usar?
 
-For each rule, you will have a paragraph explaining _why_ this rule is importante and _how_ you can fix it. For more deep information, you should find links that will point to 🛠 tools, 📖 articles or 📹 medias that can complete the checklist.
+Para cada regra, você vai encontrar um parágrafo explicando _por que_ essa regra é importante e _como_ você pode aplicá-la. Para entender melhor, você encontrará links que te direcionarão a 🛠️ ferramentas, 📖 artigos ou 📹️mídias que complementam o checklist.
 
-All items in the **Front-End Performance Checklist** are essentials to achieve the highest performance score but you would find an indicator to help you to eventually prioritised some rules amount others. There is 3 levels of priority / impact:
+Todos os itens no **Checklist de Performance Front-End** são essenciais para alcançar o melhor resultado de performance mas você encontrará um indicador para te auxiliar a eventualmente priorizar algumas regras perante outras. Existem 3 níveis de prioridade / impacto:
 
-- ![Low][low] means that the item has a **low** priority and impact on your project.
-- ![Medium][medium] means that the item has a **medium** priority and impact on your project. You shouldn't avoid tackling that item.
-- ![High][high] means that the item has a **high** priority and impact on your project. You can't avoid following that rules and do the corrections appropriates.
+- ![Baixo][low] significa que o item tem **pouco** impacto e prioridade no seu projeto.
+- ![Médio][medium] significa que o item tem **médio** impacto e prioridade no seu projeto.Você não deve evitar resolver esse item.
+- ![Alto][high] significa que o item tem **alto** impacto e prioridade no seu projeto. Você não pode evitar seguir a regra e aplicar as correções apropriadas.
 
 ### Ferramentas de performance
 
-List of the tools you can use to test or monitor your website or application:
+Lista de ferramentas que você pode usar para testar ou monitorar o seu website ou aplicação:
 
-- 🛠 [WebPagetest - Website Performance and Optimization Test](https://www.webpagetest.org/)
-- 🛠 ☆ [Dareboost: Website Speed Test and Website Analysis](https://www.dareboost.com/) (use the coupon WPCDD20 for -20%)
-- 🛠 [GTmetrix | Website Speed and Performance Optimization](https://gtmetrix.com/)
+- 🛠 [WebPagetest - Teste de Performance e Otimização de Websites](https://www.webpagetest.org/)
+- 🛠 ☆ [Dareboost: Teste de Velocidade para Website e Análise de Website](https://www.dareboost.com/) (use o cupom WPCDD20 para ter -20%)
+- 🛠 [GTmetrix | Otimização de Velocidade e Performance de Website](https://gtmetrix.com/)
 - 🛠 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
-- 📖 [Pagespeed - The tool and optimization guide](https://varvy.com/pagespeed/)
-- 📖 [Make the Web Faster | Google Developers](https://developers.google.com/speed/)
-- 📖 [Sitespeed.io - Welcome to the wonderful world of Web Performance](https://www.sitespeed.io/)
+- 📖 [Pagespeed - A ferramenta e guia de otimização](https://varvy.com/pagespeed/)
+- 📖 [Torne a web mais rápida | Google Developers](https://developers.google.com/speed/)
+- 📖 [Sitespeed.io - Bem Vindo ao maravilhoso mundo da Performance da Web](https://www.sitespeed.io/)
 
 ### Referências
 
-- 📖 [The Cost Of JavaScript - YouTube](https://www.youtube.com/watch?v=_bzqF05xsC4)
-- 📖 [Get Started With Analyzing Runtime Performance  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/)
-- 📖 [State of the Web | 2018_01_01](https://httparchive.org/reports/state-of-the-web?start=2018_01_01)
-- 📖 [Page Weight Doesn't Matter](https://www.speedshop.co/2015/11/05/page-weight-doesnt-matter.html)
+- 📖 [O Custo do Javascript - YouTube](https://www.youtube.com/watch?v=_bzqF05xsC4) - _(título original: 'The Cost of Javascript', em inglês)_
+- 📖 [Entenda a Análise de Performance em Tempo de Execução  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/) - _(título original: 'Get Started With Analyzing Runtime Performance', em inglês)_
+- 📖 [A Situação da Web | 2018_01_01](https://httparchive.org/reports/state-of-the-web?start=2018_01_01) - _(título original: 'State of the Web', em inglês)_
+- 📖 [O Peso da Página não Importa](https://www.speedshop.co/2015/11/05/page-weight-doesnt-matter.html) - _(título original: 'Page Weight Doesn't Matter', em inglês)_
 
 ---
 
@@ -80,82 +80,82 @@ List of the tools you can use to test or monitor your website or application:
 
 ![html]
 
-- [ ] **Minified HTML:** ![medium] The HTML code is minified, comments, white spaces and new lines are removed from production files.
+- [ ] **HTML Minificado:** ![medium] O código HTML está minificado, commentários, _white spaces_ e novas linhas são removidas dos arquivos de produção.
 
-  _Why:_
+  _Por que:_
 
-  > Removing all unnecessary spaces, comments and break will reduce the size of your HTML and speed up your site's page load times and obviously lighten the download for your user.
+  > Remover todo o espaço desnecessário, comentarios e quebras reduz o tamanho do seu HTML e acelera o tempo de carregamento do seu site e obviamente reduz o peso do download para o usuário.
 
-  _How:_
+  _Como:_
 
-  > ⁃ Most of the frameworks have plugins to facilitate the minification of the webpages. You can use a bunch of NPM modules that can do the job for you automatically.
+  > ⁃ A maioria dos frameworks possuem plugins para facilitar a minificação das páginas web. Você pode usar uma porção de módulos do NPM que farão o trabalho pra você automaticamente..
 
-  - 🛠 [HTML minifier | Minify Code](http://minifycode.com/html-minifier/)
-  - 📖 [Experimenting with HTML minifier — Perfection Kills](http://perfectionkills.com/experimenting-with-html-minifier/#use_short_doctype)
+  - 🛠 [Minifcador HTML | Minify Code](http://minifycode.com/html-minifier/)
+  - 📖 [Experiências com com Minficador HTML — Perfection Kills](http://perfectionkills.com/experimenting-with-html-minifier/#use_short_doctype) - _(título original:'Experimenting with HTML minifier', em inglês)_
 
-- [ ] **Remove unnecessary comments:** ![low] Ensure that comments are removed from your pages.
+- [ ] **Remover comentários desnecssários:** ![low] Garante que os comentários serão removidos de suas páginas.
 
-  _Why:_
+  _Por que:_
 
-  > Comments are not really useful for the user then should be removed from production files. One case where you want to keep comments could be if you need to keep the origin for a library.
+  > Comentários não são úteis para o usuário e portanto devem ser removidos dos arquivos de produção. Um caso em que você manteria comentários poderia ser quando precisa manter a origem para uma biblioteca.
 
-  _How:_
+  _Como:_
 
-  > ⁃ Most of the time, comments can be removed using an HTML minify plugin.
+  > ⁃ Na maior parte do tempo, comentários podem ser removidos com um plugin de minificação HTML.
 
 * 🛠 [remove-html-comments - npm](https://www.npmjs.com/package/remove-html-comments)
 
-- [ ] **Remove unnecessary attributes:** ![low] Type attributes like `type="text/javascript"` or `type="text/css"` anymore and should be removed.
+- [ ] **Remover atributos desnecessários:** ![low] Atributos Type como `type="text/javascript"` ou `type="text/css"` não são mais necessários e devem ser removidos.
 
   ```html
-  <!-- Before HTML5 -->
+  <!-- antes do HTML5 -->
   <script type="text/javascript">
-      // Javascript code
+      // código Javascript
   </script>
 
-  <!-- Today -->
+  <!-- Hoje -->
   <script>
-      // Javascript code
+      // código Javascript
   </script>
   ```
 
-  _Why:_
+  _Por que:_
 
-  > Type attributes are not necessary as HTML5 implies text/css and text/javascript as defaults. Unused code should be removed when not used by your website or app as they add more weight to your pages.
+  > Atributos Type não são necessários já que o HTML5 supõe text/css e text/javascript por padrão.Código inutilizado deve ser removido quando não forem usados no seu website ou aplicação por deixarem as páginas mais pesadas.
 
-  _How:_
+  _Como:_
 
-  > ⁃ Ensure that all your `<link>` and `<script>` tags don't have any type attribute.
+  > ⁃ Certifique-se de que todas as _tags_ `<link>` e `<script>` não têm nenhum atributo type.
 
-  - 📖 [The Script Tag | CSS-Tricks](https://css-tricks.com/the-script-tag/)
+  - 📖 [A Tag de Script | CSS-Tricks](https://css-tricks.com/the-script-tag/) - _(título original: 'The Script Tag', em inglês)_
 
-- [ ] **Place CSS tags always before JavaScript tags:** ![high] Ensure that your CSS is always loaded before having JavaScript code.
+- [ ] **Sempre coloque as tags de css antes das de JavaScript:** ![high] Certifique-se de que o seu CSS sempre é carregado antes de ter código JavaScript.
 
   ```html
-  <!-- Not recommended -->
+  <!-- Não recomendado -->
   <script src="jquery.js"></script>
   <script src="foo.js"></script>
   <link rel="stylesheet" href="foo.css"/>
 
-  <!-- Recommended -->
+  <!-- Recomendado -->
   <link rel="stylesheet" href="foo.css"/>
   <script src="jquery.js"></script>
   <script src="foo.js"></script>
   ```
 
-  _Why:_
+  _Por que:_
 
-  > Having your CSS tags before any JavaScript enables better, parallel download which speed up browser rendering time.
+  > Ter o CSS antes do Javascript posibilita um melhor download paralelo que torna o tempo de renderização do navegador mais rápido.
 
-  _How:_
+  _Como:_
 
-  > ⁃ Ensure that `<link>` and `<style>` in your `<head>` are always before your `<script>`.
+  > ⁃ Certifique-se que as tags `<link>` e `<style>` no `<head>` sempre vêm antes de qualquer `<script>`.
 
-  - 📖 [Ordering your styles and scripts for pagespeed](https://varvy.com/pagespeed/style-script-order.html)
+  - 📖 [Ordenando seus estilos e scripts para o carregamento da página](https://varvy.com/pagespeed/style-script-order.html) - _(título original: 'Ordering your styles and scripts for pagespeed', em inglês)_
 
-- [ ] **Minimize the number of iframes:** ![high] Use iframes only if you don't have any other technical possibility. Try to avoid as much as you can iframes.
+- [ ] **Reduza a quantidade de iframes:** ![high] Somente use iframesse não há nenhuma outra possibilidade técnica. Evite tanto quanto o possível utilizar iframes.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ Topo](#table-of-contents)**
 
 ## CSS
 
