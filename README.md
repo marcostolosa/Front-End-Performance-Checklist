@@ -69,10 +69,10 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 ### Referências
 
-- 📖 [O Custo do Javascript - YouTube](https://www.youtube.com/watch?v=_bzqF05xsC4) - _(título original: 'The Cost of Javascript', em inglês)_
-- 📖 [Entenda a Análise de Performance em Tempo de Execução  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/) - _(título original: 'Get Started With Analyzing Runtime Performance', em inglês)_
-- 📖 [A Situação da Web | 2018_01_01](https://httparchive.org/reports/state-of-the-web?start=2018_01_01) - _(título original: 'State of the Web', em inglês)_
-- 📖 [O Peso da Página não Importa](https://www.speedshop.co/2015/11/05/page-weight-doesnt-matter.html) - _(título original: 'Page Weight Doesn't Matter', em inglês)_
+- 📖 [O Custo do Javascript - YouTube](https://www.youtube.com/watch?v=_bzqF05xsC4) -
+- 📖 [Entenda a Análise de Performance em Tempo de Execução  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/)
+- 📖 [A Situação da Web | 2018_01_01](https://httparchive.org/reports/state-of-the-web?start=2018_01_01)
+- 📖 [O Peso da Página não Importa](https://www.speedshop.co/2015/11/05/page-weight-doesnt-matter.html)
 
 ---
 
@@ -91,7 +91,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   > ⁃ A maioria dos frameworks possuem plugins para facilitar a minificação das páginas web. Você pode usar uma porção de módulos do NPM que farão o trabalho pra você automaticamente..
 
   - 🛠 [Minifcador HTML | Minify Code](http://minifycode.com/html-minifier/)
-  - 📖 [Experiências com com Minficador HTML — Perfection Kills](http://perfectionkills.com/experimenting-with-html-minifier/#use_short_doctype) - _(título original:'Experimenting with HTML minifier', em inglês)_
+  - 📖 [Experiências com com Minficador HTML — Perfection Kills](http://perfectionkills.com/experimenting-with-html-minifier/#use_short_doctype)
 
 - [ ] **Remover comentários desnecessários:** ![low] Garanta que os comentários serão removidos de suas páginas.
 
@@ -127,7 +127,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
   > ⁃ Certifique-se de que todas as _tags_ `<link>` e `<script>` não têm nenhum atributo type.
 
-  - 📖 [A Tag de Script | CSS-Tricks](https://css-tricks.com/the-script-tag/) - _(título original: 'The Script Tag', em inglês)_
+  - 📖 [A Tag de Script | CSS-Tricks](https://css-tricks.com/the-script-tag/)
 
 - [ ] **Sempre coloque as _tags_ de css antes das de JavaScript:** ![high] Certifique-se de que o seu CSS sempre é carregado antes de ter código JavaScript.
 
@@ -151,7 +151,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
   > ⁃ Certifique-se que as tags `<link>` e `<style>` no `<head>` sempre vêm antes de qualquer `<script>`.
 
-  - 📖 [Ordenando seus estilos e scripts para o carregamento da página](https://varvy.com/pagespeed/style-script-order.html) - _(título original: 'Ordering your styles and scripts for pagespeed', em inglês)_
+  - 📖 [Ordenando seus estilos e scripts para o carregamento da página](https://varvy.com/pagespeed/style-script-order.html)
 
 - [ ] **Reduza a quantidade de iframes:** ![high] Somente use iframes se não há nenhuma outra possibilidade técnica. Evite tanto quanto o possível utilizar iframes.
 
@@ -171,7 +171,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
   > ⁃ Use ferramentas para minificar seus arquivos automaticamente antes ou durante o _build_ ou _deploy_.
 
-  - 🛠 [cssnano: Um minificador modular baseado no ecossistema PostCSS](https://cssnano.co/) - _(título original: 'cssnano: A modular minifier based on the PostCSS ecosystem.', em inglês)_
+  - 🛠 [cssnano: Um minificador modular baseado no ecossistema PostCSS](https://cssnano.co/)
   - 🛠 [@neutrinojs/style-minify - npm](https://www.npmjs.com/package/@neutrinojs/style-minify)
 
 - [ ] **Concatenação:** ![medium] Arquivos CSS são concatenados em um único arquivo _(Nem sempre é válido para HTTP/2)_.
@@ -194,8 +194,8 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   > ⁃ Use uma ferramenta online ou algum plugin antes ou durante o _build_ ou _deploy_ do seu projeto para concatenar arquivos.
   > ⁃ Certifique-se, claro, que a concatenação não quebre o seu projeto.
 
-  - 📖 [HTTP: Otimizando a Entrega de Aplicações - Alta performance em Conexão do Navegador(O'Reilly)](https://hpbn.co/optimizing-application-delivery/#optimizing-for-http2) - _(título original: "HTTP: Optimizing Application Delivery - High Performance Browser Networking (O'Reilly)', em inglês)_
-  - 📖 [Melhores Práticas de Performance na Era do HTTP/2](https://deliciousbrains.com/performance-best-practices-http2/) _(título original: 'Performance Best Practices in the HTTP/2 Era', em inglês)_
+  - 📖 [HTTP: Otimizando a Entrega de Aplicações - Alta performance em Conexão do Navegador(O'Reilly)](https://hpbn.co/optimizing-application-delivery/#optimizing-for-http2)
+  - 📖 [Melhores Práticas de Performance na Era do HTTP/2](https://deliciousbrains.com/performance-best-practices-http2/
 
 - [ ] **Não-obstrusivo:** ![high] Arquivos CSS precisam ser não-obstrusivos para prevenir que o DOM demore de carregar .
 
@@ -213,9 +213,9 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   > ⁃ Você precisa adicionar o atributo `rel` com o valor `preload` e incluir `as="style"` no elemento `<link>`.
 
   - 📖 [loadCSS por filament group](https://github.com/filamentgroup/loadCSS)
-  - 📖 [Exemplo de pré-carregamento de CSS usando loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf) - _(título original:'loadCSS by filament group', em inglês)_
-  - 📖 [Pré-carregamento de conteúdo com rel="preload"](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content) - _(título original:'loadCSS by filament group', em inglês)_
-  - 📖 [Pré-carregamento: Pra que serve? — Smashing Magazine](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/) - _(título original:'loadCSS by filament group', em inglês)_
+  - 📖 [Exemplo de pré-carregamento de CSS usando loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
+  - 📖 [Pré-carregamento de conteúdo com rel="preload"](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content)
+  - 📖 [Pré-carregamento: Pra que serve? — Smashing Magazine](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/)
 
 - [ ] **Tamanho das classes CSS:** ![low] O tamanho das suas classes pode causar (baixo) impacto nos seus arquivos HTML e CSS (eventualmente).
 
@@ -227,7 +227,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
   > ⁃ Definir um limite em termos de número de caracteres pode ser interressante para algumas pessoas, mas garantir que você desmembrou o seu website em componentes pode ajudar a reduzir a quantidade de classes (e declarações) e o tamanho das suas classes.
 
-  - 🛠 [classe longa vs curta · jsPerf](https://jsperf.com/long-vs-short-class) - _(título original:'long vs short class', em inglês)_
+  - 🛠 [classe longa vs curta · jsPerf](https://jsperf.com/long-vs-short-class)
 
 - [ ] **CSS inutilizado:** ![medium] Remova seletores CSS inutlizados.
 
@@ -242,7 +242,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   - 🛠 [UnCSS Online](https://uncss-online.com/)
   - 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
   - 🛠 [PurgeCSS](https://github.com/FullHuman/purgecss)
-  - 🛠 [Cobertura das Ferrramentas de Desenvolvedor do Chrome](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) - _(título original: 'Chrome DevTools Coverage', em inglês)_
+  - 🛠 [Cobertura das Ferrramentas de Desenvolvedor do Chrome](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
 
 * [ ] **CSS Crítico:** ![high] O CSS crítico (ou "sobre a dobra") contém todo o CSS usado para renderizar a parte visível da página. ele é incorporado antes da chamada principal do seu CSS e entre `<style></style>` numa única linha (minificado se possível).
 
@@ -254,10 +254,10 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
   > ⁃ Gere o CSS crítico com ferramentas online ou usando um plugin como o que Addy Osmani desenvolveu.
 
-  - 📖 [Entendendo o CSS Crítico](https://www.smashingmagazine.com/2015/08/understanding-critical-css/) - _(título original: 'Understanding Critical CSS', em inglês)_
+  - 📖 [Entendendo o CSS Crítico](https://www.smashingmagazine.com/2015/08/understanding-critical-css/)
   - 🛠 [Critical por Addy Osmani no GitHub](https://github.com/addyosmani/critical) automatiza isso.
-  - 📖 [Deixando o CSS crítico _inline_ para ter melhor performance na web | Go Make Things](https://gomakethings.com/inlining-critical-css-for-better-web-performance/) - _(título original: 'Inlining critical CSS for better web performance', em inglês)_
-  - 📖 [Gerador de CSS de Caminho Crítico Critical - Priorize contéudo acima da dobra :: SiteLocity](https://www.sitelocity.com/critical-path-css-generator) - _(título original: ' Path CSS Generator - Prioritize above the fold content', em inglês)_
+  - 📖 [Deixando o CSS crítico _inline_ para ter melhor performance na web | Go Make Things](https://gomakethings.com/inlining-critical-css-for-better-web-performance/)
+  - 📖 [Gerador de CSS de Caminho Crítico Critical - Priorize contéudo acima da dobra :: SiteLocity](https://www.sitelocity.com/critical-path-css-generator)
 
 - [ ] **CSS incorporado ou _inline_:** ![high] Evite usar CSS incorporado ou _inline_ dentro do seu `<body>` _(não válido para HTTP/2)_
 
@@ -269,21 +269,20 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
   > ⁃ Sempre use folhas de estilo externas ou incorpore o CSS no seu `<head>` (e siga as outras regras de performance).
 
-  - 📖 [Observe as Melhores Práticas de CSS: Evite Usar Estilos CSS _Inline_](https://www.lifewire.com/avoid-inline-styles-for-css-3466846) - _(título original: 'Observe CSS Best Practices: Avoid CSS Inline Styles', em inglês)_
+  - 📖 [Observe as Melhores Práticas de CSS: Evite Usar Estilos CSS _Inline_](https://www.lifewire.com/avoid-inline-styles-for-css-3466846)
+- [ ] **Analise a complexidade das folhas de estilo:** ![high] Analisar as suas folhas de estilo pode te ajudar a encontrar problemas, redundâncias e seletores CSS duplicados.
 
-- [ ] **Analyse stylesheets complexity:** ![high] Analyzing your stylesheets can help you to flag issues, redundancies and duplicate CSS selectors.
+  _Por que:_
 
-  _Why:_
+  > Às vezes você pode ter redundancias ou erros de validação no seu CSS, analisar os arquivos CSS e remover essas complexidades pode te ajudar a acelerar os arquivos CSS (já que seu navegador vai ler mais rápido).
 
-  > Sometimes you may have redundancies or validation errors in your CSS, analysing your CSS files and removed these complexities can help you to speed up your CSS files (because your browser will read them faster)
+  _Como:_
 
-  _How:_
+  > ⁃ O seu CSS deve estar organizado, Pré-processadores CSS podem te ajudar com isso. Algumas ferramentas online listadas acima também podem te ajudar a analisar e corrigir o seu código.
 
-  > ⁃ Your CSS should be organized, using a CSS preprocessor can help you with that. Some online tools listed above can also help you analysing and correct your code.
-
-  - 🛠 [TestMyCSS | Optimize and Check CSS Performance](http://www.testmycss.com/)
+  - 🛠 [TestMyCSS | Otimize e Confira a Performance do CSS](http://www.testmycss.com/)
   - 📖 [CSS Stats](https://cssstats.com/)
-  - 🛠 [macbre/analyze-css: CSS selectors complexity and performance analyzer](https://github.com/macbre/analyze-css)
+  - 🛠 [macbre/analyze-css: Analizador de complexidade e performance de seletores CSS](https://github.com/macbre/analyze-css)
 
 **[⬆ back to top](#table-of-contents)**
 
