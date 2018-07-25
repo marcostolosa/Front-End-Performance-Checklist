@@ -333,94 +333,94 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 - 📖 [Font Bytes - Peso das Páginas](https://httparchive.org/reports/page-weight#bytesFont)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ Topo](#table-of-contents)**
 
 ## Imagens
 
 ![images]
 
-- 📖 [Image Bytes in 2018](https://httparchive.org/reports/page-weight#bytesImg)
+- 📖 [Bytes de Imagens em 2018](https://httparchive.org/reports/page-weight#bytesImg)
 
-- [ ] **Images optimization:** ![high] Your images are optimized, compressed without direct impact to the end user.
+- [ ] **Otimização de Imagens:** ![high] Suas imagens são otimizadas, comprimidas sem impacto direto ao usuário final.
 
-  _Why:_
+  _Por que:_
 
-  > Optimized images load faster in your browser and consume less data.
+  > Imagens otimizadas carregam mais rápido no navegador e consomem menos dados.
 
-  _How:_
+  _Como:_
 
-  > ⁃ Try using CSS3 effects when it's possible (instead of a small image)
-  > ⁃ When it's possible, use fonts instead of text encoded in your images
+  > ⁃ Tente usar efeitos do CSS3 quando possível (no lugar de imagens pequenas)
+  > ⁃ Quando possível use fontes no lugar de texto dentro de imagens
   > ⁃ Use SVG
-  > ⁃ Use a tool and specify a level compression under 85.
+  > ⁃ Use uma ferramenta e especifique uma taxa de compressão abaixo de 85
 
-  - 📖 [Image Optimization | Web Fundamentals | Google Developers](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)
-  - 🛠 [TinyJPG – Compress JPEG images intelligently](https://tinyjpg.com/)
+  - 📖 [Otimização de Imagens | Fundamentos da Web | Google Developers](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)
+  - 🛠 [TinyJPG – Comprima imagens JPEG inteligentemente](https://tinyjpg.com/)
 
-* [ ] **Images format:** ![high] Choose your image format appropriately.
+* [ ] **Formato de Imagens:** ![high] Escolha o formato das suas imagens apropriadamente.
 
-  _Why:_
+  _Por que:_
 
-  > To ensure that your images don't slow your website, choose the format that will
+  > Para certificar que as suas mensagens não deixam seu site lerdo, escolha o formato que terá o menor impacto
 
-  _How:_
+  _Como:_
 
-  > ⁃ Use [Lighthouse](https://developers.google.com/web/tools/lighthouse/) to identify which images can eventually use **next-gen formats** (like JPEG 2000m JPEG XR or WebP)
-  > ⁃ Compare different formats, sometimes using PNG8 is better than PNG16, sometimes it's not.
+  > ⁃ Use o [Lighthouse](https://developers.google.com/web/tools/lighthouse/) para identificar quais imagens podem eventualmente usar **formatos da próxima geração** (como JPEG 2000m, JPEG XR ou WebP)
+  > ⁃ Compare formatos diferentes, algumas vezes usar PNG8 é melhor que PNG16, e outras não.
 
-  - 📖 [Serve Images in Next-Gen Formats  |  Tools for Web Developers  |  Google Developers](https://developers.google.com/web/tools/lighthouse/audits/webp)
-  - 📖 [What Is the Right Image Format for Your Website? — SitePoint](https://www.sitepoint.com/what-is-the-right-image-format-for-your-website/)
-  - 📖 [PNG8 - The Clear Winner — SitePoint](https://www.sitepoint.com/png8-the-clear-winner/)
-  - 📖 [8-bit vs 16-bit - What Color Depth You Should Use And Why It Matters - DIY Photography](https://www.diyphotography.net/8-bit-vs-16-bit-color-depth-use-matters/)
+  - 📖 [Entregue Imagens em Formatos da próxima geração |  Ferramentas para Desenvolvedores Web |  Google Developers](https://developers.google.com/web/tools/lighthouse/audits/webp)
+  - 📖 [Qual é o Formato de Imagem Certo Para o Seu Site? — SitePoint](https://www.sitepoint.com/what-is-the-right-image-format-for-your-website/)
+  - 📖 [PNG8 - O Vencedor Evidente — SitePoint](https://www.sitepoint.com/png8-the-clear-winner/)
+  - 📖 [8-bit vs 16-bit - Qual Profundidade de Cor Você Deveria Usar e Por que Importa - DIY Photography](https://www.diyphotography.net/8-bit-vs-16-bit-color-depth-use-matters/)
 
-- [ ] **Use vector image vs raster/bitmap:** ![medium] Prefer using vector image rather than bitmap images (when possible).
+- [ ] **Use imagens vetorizadas em favor de raster/bitmap:** ![medium] Prefira usar iamgem vetorizada em vez de _bitmap_ (quando possível).
 
-  _Why:_
+  _Por que:_
 
-  > Vector images (SVG) tend to be smaller than images and SVG's are responsive and scale perfectly. These images can be animated and modified by CSS.
+  > Imagens vetorizadas (SVG) costumam ser mais leves que _bitmap_ e SVGs são responsivos e redimencionam perfeitamente. Essas imagens podem ser animadas e modificadas com CSS.
 
-* [ ] **Images dimensions:** ![medium] Set `width` and `height` attributes on `<img>` if the final rendered image size is known.
+* [ ] **Dimensões das Imagens:** ![medium] Defina atributos `width` e `height` nas `<img>` se o tamanho final da imagem exibida é conhecido.
 
-  _Why:_
+  _Por que:_
 
-  > If height and width are set, the space required for the image is reserved when the page is loaded. However, without these attributes, the browser does not know the size of the image, and cannot reserve the appropriate space to it. The effect will be that the page layout will change during loading (while the images load).
+  > Se a altura e largura da imagem são definidos, o espaço necessário para a imagem é reservado quando a página é careregada. Mas sem esses atributos o navegador não sabe o tamanho da imagem, e não pode reservar o espaço apropriado para ela. Isso causa mudança no layout da página enquanto as imagens estão sendo carregadas.
 
-* [ ] **Avoid using Base64 images:** ![medium] You could eventually convert tiny images to base64 but it's actually not the best practice.
+* [ ] **Evite usar imagens Base64:** ![medium] Você pode chegar a converter iamgens muito pequenas para base64 mas na verdade isso não é uma melhor prática.
 
-  - 📖 [Base64 Encoding & Performance, Part 1 and 2 by Harry Roberts](https://csswizardry.com/2017/02/base64-encoding-and-performance/)
-  - 📖 [A closer look at Base64 image performance – The Page Not Found Blog](http://www.andygup.net/a-closer-look-at-base64-image-performance/)
-  - 📖 [When to base64 encode images (and when not to) | David Calhoun](https://www.davidbcalhoun.com/2011/when-to-base64-encode-images-and-when-not-to/)
+  - 📖 [Codificação em Base64 & Performance, Parte 1 e 2 by Harry Roberts](https://csswizardry.com/2017/02/base64-encoding-and-performance/)
+  - 📖 [Um olhar mais atento para performance de imagem Base64 – The Page Not Found Blog](http://www.andygup.net/a-closer-look-at-base64-image-performance/)
+  - 📖 [Quando fazer codificação em base64 de imagens (e quando não fazer) | David Calhoun](https://www.davidbcalhoun.com/2011/when-to-base64-encode-images-and-when-not-to/)
   - 📖 [Base64 encoding images for faster pages | Performance and seo factors](https://varvy.com/pagespeed/base64-images.html)
 
-* [ ] **Lazy loading:** ![medium] Images are lazyloaded (A noscript fallback is always provided).
+* [ ] **Atrasar o carregamento:** ![medium] As imagens são carregadas apenas quando seriam exibidas para o usuário (Um _fallback noscript_ sempre é fornecido).
 
-  _Why:_
+  _Por que:_
 
-  > It will improve the response time of the current page and then avoid loading unnecessary images that the user may not need.
+  > Isso vai melhorar o tempo de resposta da página atual e evitar carregar imagens desnecessárias que o usuário pode não precisar.
 
-  _How:_
+  _Como:_
 
-  > ⁃ Use [Lighthouse](https://developers.google.com/web/tools/lighthouse/) to identify how many **images are offscreen**.
-  > ⁃ Use a JavaScript plugin like to lazyload your images.
+  > ⁃ Use o [Lighthouse](https://developers.google.com/web/tools/lighthouse/) para ver quais **imagens estão fora da tela**.
+  > ⁃ Use um plugin javascript como o _lazyload_ para carregar suas imagens.
 
   - 🛠 [verlok/lazyload: Github](https://github.com/verlok/lazyload)
-  - 📖 [Lazy Loading Images and Video  |  Web Fundamentals  |  Google Developers](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/)
-  - 📖 [5 Brilliant Ways to Lazy Load Images For Faster Page Loads - Dynamic Drive Blog](http://blog.dynamicdrive.com/5-brilliant-ways-to-lazy-load-images-for-faster-page-loads/)
+  - 📖 [Atrasando o Carregamento Imagens e Video  |  Fundamentos da Web  |  Google Developers](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/)
+  - 📖 [5 Maneiras Brilhantes para Atrasar o Carregamento de Imagens Para Carregamentos Rápido de Páginas - Dynamic Drive Blog](http://blog.dynamicdrive.com/5-brilliant-ways-to-lazy-load-images-for-faster-page-loads/)
 
-* [ ] **Responsive images:** ![medium] Ensure to serve images that are close to your display size.
+* [ ] **Imagens responsivas:** ![medium] Certifique-se de entregar imagens que são próximas do tamanho da tela.
 
-  _Why:_
+  _Por que:_
 
-  > Small devices don't need images bigger than their viewport. It's recommended to have multiple versions of one image on different sizes.
+  > Aparelhos pequenos não precisam de imagens maiores que a resolução deles. É recomendado ter várias versões de uma imagem em diferentes tamanhos.
 
-  _How:_
+  _Como:_
 
-  > ⁃ Create different image sizes for the devices you want to target.
-  > ⁃ Use `srcset` and `picture` to deliver multiple variants of each image.
+  > ⁃ Crie tamanhos de imagem diferentes para os aparelhos que você quer suportar.
+  > ⁃ Use `srcset` e `picture` para entregar várias versões de uma imagem.
 
-  - 📖 [Responsive images - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+  - 📖 [Imagens Responsivas - Aprenda desenvolvimento web | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ Topo](#table-of-contents)**
 
 ## JavaScript
 
@@ -428,11 +428,11 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 - [ ] **JS Minification:** ![high] All JavaScript files are minified, comments, white spaces and new lines are removed from production files _(still valid if using HTTP/2)_.
 
-  _Why:_
+  _Por que:_
 
   > Removing all unnecessary spaces, comments and break will reduce the size of your JavaScript files and speed up your site's page load times and obviously lighten the download for your user.
 
-  _How:_
+  _Como:_
 
   > ⁃ Use the tools suggested below to minify your files automatically before or during your build or your deployment.
 
@@ -441,11 +441,11 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 * [ ] **No JavaScript inside:** ![medium] _(Only valid for website)_ Avoid having multiple JavaScript codes embed in the middle of your body. Regroupe your JavaScript code inside external files or eventually in the `<head>` or at the end of your page (before `</body>`).
 
-  _Why:_
+  _Por que:_
 
   > Placing JavaScript embedded code directly in your `<body>` can slow down your page because it loads while the DOM is being built. The best option is to use external files with `async` or `defer` to avoid blocking the DOM. Another option is to place some scripts inside your `<head>`. Most of the time analytics code or small script that need to load before the DOM gets to main processing.
 
-  _How:_
+  _Como:_
 
   > ⁃ Ensure that all your files are loaded using `async` or `defer` and decide wisely the code that you will need to inject in your `<head>`.
 
@@ -461,11 +461,11 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   <script async src="foo.js">
   ```
 
-  _Why:_
+  _Por que:_
 
   > JavaScript blocks the normal parsing of the HTML document, so when the parser reaches a `<script>` tag (particularly is inside the `<head>`), it stops to fech and run it. Adding `async` or `defer` are highly recommended if your scripts are placed in the top of your page but less valuable if just before your `</body>` tag. But it's a good practice to always use these attributes to avoid any performance issue.
 
-  _How:_
+  _Como:_
 
   > ⁃ Add `async` (if the script don't rely on other scripts) or `defer` (if the script relies upon or relied upon by an async script) as an attribute to your script tag.
   > ⁃ If your have small scripts, maybe use inline script place above async scripts.
@@ -474,11 +474,11 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 * [ ] **Optimized and updated JS libraries:** ![medium] All JavaScript libraries used in your project are necessary (prefer Vanilla Javascript for simple functionalities), updated to their latest version and don't overwhelm your JavaScript with unnecessary methods.
 
-  _Why:_
+  _Por que:_
 
   > Most of the time, new versions come with optimization and security fix. You should use the most optimized code to speed up your project and ensure that you'll not slow down your website or app without outdated plugin.
 
-  _How:_
+  _Como:_
 
   > ⁃ If your project use NPM packages, [npm-check](https://www.npmjs.com/package/npm-check) is a pretty interesting library to upgrade / update your librairies.
 
@@ -487,11 +487,11 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 - [ ] **Check dependencies size limit:** ![low] Ensure to use wisely external librairies, most of the time, you can use a lighter library for a same functionnality.
 
-  _Why:_
+  _Por que:_
 
   > You may be tempted to use one of the 745 000 packages you can find on [npm](https://www.npmjs.com/), but you need to choose the best package for your needs. For example, MomentJS is an awesome library but with a lot of methods you may never use, that's why Day.js was created. It's just 2kB vs 16.4kB gz for Moment.
 
-  _How:_
+  _Como:_
 
   > ⁃ Always compare and choose the best and lighter library for your needs. You can also use tools like [npm trends](http://www.npmtrends.com/) to compare NPM package downloads counts or [Bundlephobia](https://bundlephobia.com/) to know the size of your dependencies.
 
@@ -501,11 +501,11 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 - [ ] **JavaScript Profiling:** ![medium] Check for performance problems in your JavaScript files (and CSS too).
 
-  _Why:_
+  _Por que:_
 
   > JavaScript complexity can slow down runtime performance. Identifing these possible issues are essential to offer the smoothest user experience.
 
-  _How:_
+  _Como:_
 
   > ⁃ Use the Timeline tool in the Chrome Developer Tool to evaluate scripts events and found the one that may take too much time.
 
@@ -522,11 +522,11 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 - [ ] **Webpage size < 1500 KB:** ![high] (but ideally < 500 KB) Reduce the size of your page + resources as much as you can.
 
-  _Why:_
+  _Por que:_
 
   > Ideally you should try to target < 500 KB but the state of web shows that the median of Kilobytes is around 1500 KB (even on mobile). Depending your target users, connexion, devices, it's important to reduce as much as possible your total Kilobytes to have the best user experience possible.
 
-  _How:_
+  _Como:_
 
   > ⁃ All the rules inside the Front-End Performance Checklist will help you to reduce as much as possible your resources and your code.
 
@@ -535,11 +535,11 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 - [ ] **Page load times < 3 seconds:** ![high] Reduce as much as possible your page load times to quickly deliver your content to your users.
 
-  _Why:_
+  _Por que:_
 
   > Faster your website or app is, less you have probability of bounce increases, in other terms you have less chances to lose your user or future client. Enough researches on the subject prove that point.
 
-  _How:_
+  _Como:_
 
   > ⁃ Use online tools like [Page Speed Insight](https://developers.google.com/speed/pagespeed/insights/) or [WebPageTest](https://www.webpagetest.org/) to analyze what could be slowing you down and use the Front-End Performance Checklist to improve your load times.
 
@@ -554,11 +554,11 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 * [ ] **Cookie size:** ![medium] If you are using cookies be sure each cookie doesn't exceed 4096 bytes and your domain name doesn't have more than 20 cookies.
 
-  _Why:_
+  _Por que:_
 
   > cookies is exchanged in the HTTP headers between web servers and browsers. It's important to keep the size of cookies as low as possible to minimize the impact on the user's response time.
 
-  _How:_
+  _Como:_
 
   > ⁃ Eliminate unnecessary cookies
 
