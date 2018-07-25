@@ -69,7 +69,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 ### Referências
 
-- 📖 [O Custo do Javascript - YouTube](https://www.youtube.com/watch?v=_bzqF05xsC4) -
+- 📖 [O Custo do Javascript - YouTube](https://www.youtube.com/watch?v=_bzqF05xsC4)
 - 📖 [Entenda a Análise de Performance em Tempo de Execução  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/)
 - 📖 [A Situação da Web | 2018_01_01](https://httparchive.org/reports/state-of-the-web?start=2018_01_01)
 - 📖 [O Peso da Página não Importa](https://www.speedshop.co/2015/11/05/page-weight-doesnt-matter.html)
@@ -270,6 +270,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   > ⁃ Sempre use folhas de estilo externas ou incorpore o CSS no seu `<head>` (e siga as outras regras de performance).
 
   - 📖 [Observe as Melhores Práticas de CSS: Evite Usar Estilos CSS _Inline_](https://www.lifewire.com/avoid-inline-styles-for-css-3466846)
+
 - [ ] **Analise a complexidade das folhas de estilo:** ![high] Analisar as suas folhas de estilo pode te ajudar a encontrar problemas, redundâncias e seletores CSS duplicados.
 
   _Por que:_
@@ -290,47 +291,47 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 ![fonts]
 
-- 📖 [A Book Apart, Webfont Handbook](https://abookapart.com/products/webfont-handbook)
+- 📖 [A Book Apart, Guia de Bolso para Webfonts](https://abookapart.com/products/webfont-handbook)
 
-* [ ] **Webfont formats:** ![medium] You are using WOFF2 on your web project or application.
+* [ ] **Formato de Webfont:** ![medium] Você usa WOFF2 no seu projeto ou aplicação web.
 
-  _Why:_
+  _Por que:_
 
-  > According to Google, the WOFF 2.0 Web Font compression format offers 30% average gain over WOFF 1.0. It's then good to use WOFF 2.0, WOFF 1.0 as a fallback and TTF.
+  > De acordo com o Google, a compressão do formato WOFF 2.0 oferece ganhos de 30% em média com relação ao WOFF 1.0. Portanto é bom usar WOFF 2.0, WOFF 1.0 como _fallback_ e TFF.
 
-  _How:_
+  _Como:_
 
-  > ⁃ Check before buying your new font that the provider gives you the WOFF2 format. If you are using a free font, you can always use Font Squirrel to generate all the formats you need.
+  > ⁃ Antes de comprar sua nova fonte garanta que o fornecedor te entregue o formato WOFF2. Se estiver usando uma fonte grátis, você pode usar o Font Squirrel para gerar todos os formatos que precisar.
 
-  - 📖 [WOFF 2.0 – Learn more about the next generation Web Font Format and convert TTF to WOFF2](https://gist.github.com/sergejmueller/cf6b4f2133bcb3e2f64a)
-  - 🛠 [Create Your Own @font-face Kits » Font Squirrel](https://www.fontsquirrel.com/tools/webfont-generator)
-  - 📖 [Using @font-face | CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/?ref=frontendchecklist)
+  - 📖 [WOFF 2.0 – Aprenda mais sobre a próxima geração de Formato Webfont e converta TFF para WOFF2](https://gist.github.com/sergejmueller/cf6b4f2133bcb3e2f64a)
+  - 🛠 [Crie Seus Próprios Kits @font-face » Font Squirrel](https://www.fontsquirrel.com/tools/webfont-generator)
+  - 📖 [Usando @font-face | CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/?ref=frontendchecklist)
   - 📖 [Can I use... WOFF2](https://caniuse.com/#feat=woff2)
 
-* [ ] **Use `preconnect` to load your fonts faster:** ![medium]
+* [ ] **Use `preconnect` para carregar suas fontes mais rápido:** ![medium]
 
   ```html
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   ```
 
-  _Why:_
+  _Por que:_
 
-  > When you arrived on a website, your device needs to find out where you site live and which server it needs to connect with. Your browser had to contact a DNS server and wait for the lookup complete before fetching the ressource (fonts, CSS files...). Prefetches and preconnects allow the browser
+  > Quando você acessa um website, seu dispositivo precisa encontrar onde o o site está hospedado e a qual servidor ele precisa se conectar. Seu navegador precisou acessar um servidor DNS e esperar até a consulta completar antes de buscar os recursos (fontes, arquivos CSS...). Usar `prefetch` e `preconnect` permite ao navegador reduzir o tempo de carregamento da página.
 
-  _How:_
+  _Como:_
 
-  > ⁃ Before prefetching your webfonts, use webpagetest to evaluate your website.
-  > ⁃ Look for teal colored DNS lookups and note the host that are being requested.
-  > ⁃ Prefetch your webfonts in your `<head>` and add eventually these hostnames that you should prefetch too.
+  > ⁃ Antes de usar `prefetch` nas suas _webfonts_, use o webpagetest para avaliar o seu site.
+  > ⁃ Procure por consultas DNS azul-petróleo e anote os _hosts_ que são solicitados.
+  > ⁃ Coloque Prefetch nas fontes de dentro do seu `<head>` e eventualmente inclua esses _hostnames_ que você deveria dar _prefetch_ também.
 
-  - 📖 [Faster Google Fonts with Preconnect - CDN Planet](https://www.cdnplanet.com/blog/faster-google-webfonts-preconnect/)
-  - 📖 [Make Your Site Faster with Preconnect Hints | Viget](https://www.viget.com/articles/make-your-site-faster-with-preconnect-hints/)
-  - 📖 [Ultimate Guide to Browser Hints: Preload, Prefetch, and Preconnect - MachMetrics Speed Blog](https://www.machmetrics.com/speed-blog/guide-to-browser-hints-preload-preconnect-prefetch/)
-  - 📖 [A Comprehensive Guide to Font Loading Strategies—zachleat.com](https://www.zachleat.com/web/comprehensive-webfonts/#font-face)
+  - 📖 [Fontes Google mais rápidas com Preconnect - CDN Planet](https://www.cdnplanet.com/blog/faster-google-webfonts-preconnect/)
+  - 📖 [Torne seu site mais rápido com avisos Preconnect | Viget](https://www.viget.com/articles/make-your-site-faster-with-preconnect-hints/)
+  - 📖 [Guia Final para Avisos do Navegador: Preload, Prefetch, e Preconnect - MachMetrics Speed Blog](https://www.machmetrics.com/speed-blog/guide-to-browser-hints-preload-preconnect-prefetch/)
+  - 📖 [Guia Abrangente de Carregamento de Fontes Strategies—zachleat.com](https://www.zachleat.com/web/comprehensive-webfonts/#font-face)
 
-* [ ] **Webfont size:** ![medium] Webfont sizes don't exceed 300kb (all variants included)
+* [ ] **Tamanho de Webfonts:** ![medium] O Tamanho das Webfonts não ultrapassa 300kb (com todas as variantes)
 
-- 📖 [Font Bytes - Page Weight](https://httparchive.org/reports/page-weight#bytesFont)
+- 📖 [Font Bytes - Peso das Páginas](https://httparchive.org/reports/page-weight#bytesFont)
 
 **[⬆ back to top](#table-of-contents)**
 
