@@ -426,30 +426,30 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 ![javascript]
 
-- [ ] **JS Minification:** ![high] All JavaScript files are minified, comments, white spaces and new lines are removed from production files _(still valid if using HTTP/2)_.
+- [ ] **Minificação de JS:** ![high] Todos os arquivos javascript estão minificados, comentários, _white space_ e novas linhas foram removidas dos arquivos de produção _(válido mesmo se usando HTTP/)_
 
   _Por que:_
 
-  > Removing all unnecessary spaces, comments and break will reduce the size of your JavaScript files and speed up your site's page load times and obviously lighten the download for your user.
+  > Remover os espaços desnecessários, comentários e quebras reduz o tamanho dos seus arquivos javascript e acelera o carregamento das páginas do seu site e obviamente reduz o peso de download para o usuário.
 
   _Como:_
 
-  > ⁃ Use the tools suggested below to minify your files automatically before or during your build or your deployment.
+  > ⁃ Use as ferramentas online recomendadas abaixo para minificar os seus arquivos automaticamente antes ou durante o seu _build_ ou _deploy_.
 
   - 📖 [uglify-js - npm](https://www.npmjs.com/package/uglify-js)
-  - 📖 [Short read: How is HTTP/2 different? Should we still minify and concatenate?](https://scaleyourcode.com/blog/article/28)
+  - 📖 [Leitura rápida: Qual a diferença do HTTP/2? Ainda devemos minificar e concatenar?](https://scaleyourcode.com/blog/article/28)
 
-* [ ] **No JavaScript inside:** ![medium] _(Only valid for website)_ Avoid having multiple JavaScript codes embed in the middle of your body. Regroupe your JavaScript code inside external files or eventually in the `<head>` or at the end of your page (before `</body>`).
+* [ ] **Nenhum javascript no meio:** ![medium] _(Só vale para website)_ Evite ter multiplos códigos javascript incorporados no meio do _body_. Reagrupe seu código javascript dentro de arquivos externos, no `<head>` ou no fim da sua página (antes do `</body>`).
 
   _Por que:_
 
-  > Placing JavaScript embedded code directly in your `<body>` can slow down your page because it loads while the DOM is being built. The best option is to use external files with `async` or `defer` to avoid blocking the DOM. Another option is to place some scripts inside your `<head>`. Most of the time analytics code or small script that need to load before the DOM gets to main processing.
+  > Incorporar código JavaScript diretamente no `<body>` pode tornar a página lenta já que será carregado enquando o DOM é construído. A melhor opção é usar arquivos externos com `async` ou `defer` para evitar bloquear o DOM. Outra opção é colocar alguns scripts no `<head>`.
 
   _Como:_
 
-  > ⁃ Ensure that all your files are loaded using `async` or `defer` and decide wisely the code that you will need to inject in your `<head>`.
+  > ⁃ Certifique-se de que todos os seus arquivos são carregados usando `async` ou `deferP e escolha sabiamente o código que será inserido no `<head>`.
 
-  - 📖 [11 Tips to Optimize JavaScript and Improve Website Loading Speeds](https://www.upwork.com/hiring/development/11-tips-to-optimize-javascript-and-improve-website-loading-speeds/)
+  - 📖 [11 Dicas para Otimizar JavaScript e Melhorar o Tempo de Carregamento de Websites](https://www.upwork.com/hiring/development/11-tips-to-optimize-javascript-and-improve-website-loading-speeds/)
 
 * [ ] **Non-blocking JavaScript:** ![high] JavaScript files are loaded asynchronously using `async` or deferred using `defer` attribute.
 
