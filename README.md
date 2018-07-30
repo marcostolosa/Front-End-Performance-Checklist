@@ -470,7 +470,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   > ⁃ Coloque o atributo `async` (se o script não depende de outros scripts) ou `defer` (se o script depende de outro ou é necessário para outro script).
   > ⁃ Se tiver scripts pequenos, considere deixar _inline_ acima dos scripts assíncronos.
 
-  - 📖 [Remove Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/BlockingJS)
+  - 📖 [Remova JavaScript que Bloqueia a Renderização](https://developers.google.com/speed/docs/insights/BlockingJS)
 
 * [ ] **Optimized and updated JS libraries:** ![medium] All JavaScript libraries used in your project are necessary (prefer Vanilla Javascript for simple functionalities), updated to their latest version and don't overwhelm your JavaScript with unnecessary methods.
 
