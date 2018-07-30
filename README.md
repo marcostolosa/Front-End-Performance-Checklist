@@ -447,28 +447,28 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
   _Como:_
 
-  > ⁃ Certifique-se de que todos os seus arquivos são carregados usando `async` ou `deferP e escolha sabiamente o código que será inserido no `<head>`.
+  > ⁃ Certifique-se de que todos os seus arquivos são carregados usando `async` ou `deferP e escolha sabiamente o código que será inserido no`<head>`.
 
   - 📖 [11 Dicas para Otimizar JavaScript e Melhorar o Tempo de Carregamento de Websites](https://www.upwork.com/hiring/development/11-tips-to-optimize-javascript-and-improve-website-loading-speeds/)
 
-* [ ] **Non-blocking JavaScript:** ![high] JavaScript files are loaded asynchronously using `async` or deferred using `defer` attribute.
+* [ ] **JavaScript sem bloqueio:** ![high] Arquivos javascript são carregados assincronamente utilizando atributo `async` ou deferidos com o atributo `defer`.
 
   ```html
-  <!-- Defer Attribute -->
+  <!--  Atributo Defer -->
   <script defer src="foo.js">
 
-  <!-- Async Attribute -->
+  <!-- Atributo Async -->
   <script async src="foo.js">
   ```
 
   _Por que:_
 
-  > JavaScript blocks the normal parsing of the HTML document, so when the parser reaches a `<script>` tag (particularly is inside the `<head>`), it stops to fech and run it. Adding `async` or `defer` are highly recommended if your scripts are placed in the top of your page but less valuable if just before your `</body>` tag. But it's a good practice to always use these attributes to avoid any performance issue.
+  > Javascript bloqueia o _parse_ normal de um documento HTML, então quando o _parser_ encontra uma _tag_ `<script>` (especialmente se está dentro do `<head>`), ele para para buscar e executa-la. Adicionar `async` ou `defer` é altamente recomendado se seus scripts estão localizados no topo da sua página mas menos importante se estiverem logo antes da _tag_ `</body>`. Mesmo assim é boa prática usar esses atributos para evitar problemas de performance.
 
   _Como:_
 
-  > ⁃ Add `async` (if the script don't rely on other scripts) or `defer` (if the script relies upon or relied upon by an async script) as an attribute to your script tag.
-  > ⁃ If your have small scripts, maybe use inline script place above async scripts.
+  > ⁃ Coloque o atributo `async` (se o script não depende de outros scripts) ou `defer` (se o script depende de outro ou é necessário para outro script).
+  > ⁃ Se tiver scripts pequenos, considere deixar _inline_ acima dos scripts assíncronos.
 
   - 📖 [Remove Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/BlockingJS)
 
