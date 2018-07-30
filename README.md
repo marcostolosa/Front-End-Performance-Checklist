@@ -37,7 +37,7 @@
 2.  **[CSS](#css)**
 3.  **[Fontes](#fonts)**
 4.  **[Imagens](#images)**
-5.  **[JavaScript](#javascript)**
+5.  **[JavaScript](#JavaScript)**
 6.  **[Servidor](#server) (em progresso)**
 7.  **[Frameworks JS](#js-frameworks) (em progresso)**
 
@@ -69,7 +69,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 ### Referências
 
-- 📖 [O Custo do Javascript - YouTube](https://www.youtube.com/watch?v=_bzqF05xsC4)
+- 📖 [O Custo do JavaScript - YouTube](https://www.youtube.com/watch?v=_bzqF05xsC4)
 - 📖 [Entenda a Análise de Performance em Tempo de Execução  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/)
 - 📖 [A Situação da Web | 2018_01_01](https://httparchive.org/reports/state-of-the-web?start=2018_01_01)
 - 📖 [O Peso da Página não Importa](https://www.speedshop.co/2015/11/05/page-weight-doesnt-matter.html)
@@ -105,23 +105,23 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 * 🛠 [remove-html-comments - npm](https://www.npmjs.com/package/remove-html-comments)
 
-- [ ] **Remover atributos desnecessários:** ![low] Atributos Type como `type="text/javascript"` ou `type="text/css"` não são mais necessários e devem ser removidos.
+- [ ] **Remover atributos desnecessários:** ![low] Atributos Type como `type="text/JavaScript"` ou `type="text/css"` não são mais necessários e devem ser removidos.
 
   ```html
   <!-- antes do HTML5 -->
-  <script type="text/javascript">
-      // código Javascript
+  <script type="text/JavaScript">
+      // código JavaScript
   </script>
 
   <!-- Hoje -->
   <script>
-      // código Javascript
+      // código JavaScript
   </script>
   ```
 
   _Por que:_
 
-  > Atributos Type não são necessários já que o HTML5 supõe text/css e text/javascript por padrão. Código inutilizado deve ser removido quando não forem usados no seu website ou aplicação por deixarem as páginas mais pesadas.
+  > Atributos Type não são necessários já que o HTML5 supõe text/css e text/JavaScript por padrão. Código inutilizado deve ser removido quando não forem usados no seu website ou aplicação por deixarem as páginas mais pesadas.
 
   _Como:_
 
@@ -145,7 +145,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
   _Por que:_
 
-  > Ter o CSS antes do Javascript posibilita um melhor download paralelo que torna o tempo de renderização do navegador mais rápido.
+  > Ter o CSS antes do JavaScript posibilita um melhor download paralelo que torna o tempo de renderização do navegador mais rápido.
 
   _Como:_
 
@@ -401,7 +401,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   _Como:_
 
   > ⁃ Use o [Lighthouse](https://developers.google.com/web/tools/lighthouse/) para ver quais **imagens estão fora da tela**.
-  > ⁃ Use um plugin javascript como o _lazyload_ para carregar suas imagens.
+  > ⁃ Use um plugin JavaScript como o _lazyload_ para carregar suas imagens.
 
   - 🛠 [verlok/lazyload: Github](https://github.com/verlok/lazyload)
   - 📖 [Atrasando o Carregamento Imagens e Video  |  Fundamentos da Web  |  Google Developers](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/)
@@ -424,13 +424,13 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 ## JavaScript
 
-![javascript]
+![JavaScript]
 
-- [ ] **Minificação de JS:** ![high] Todos os arquivos javascript estão minificados, comentários, _white space_ e novas linhas foram removidas dos arquivos de produção _(válido mesmo se usando HTTP/)_
+- [ ] **Minificação de JS:** ![high] Todos os arquivos JavaScript estão minificados, comentários, _white space_ e novas linhas foram removidas dos arquivos de produção _(válido mesmo se usando HTTP/)_
 
   _Por que:_
 
-  > Remover os espaços desnecessários, comentários e quebras reduz o tamanho dos seus arquivos javascript e acelera o carregamento das páginas do seu site e obviamente reduz o peso de download para o usuário.
+  > Remover os espaços desnecessários, comentários e quebras reduz o tamanho dos seus arquivos JavaScript e acelera o carregamento das páginas do seu site e obviamente reduz o peso de download para o usuário.
 
   _Como:_
 
@@ -439,7 +439,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   - 📖 [uglify-js - npm](https://www.npmjs.com/package/uglify-js)
   - 📖 [Leitura rápida: Qual a diferença do HTTP/2? Ainda devemos minificar e concatenar?](https://scaleyourcode.com/blog/article/28)
 
-* [ ] **Nenhum javascript no meio:** ![medium] _(Só vale para website)_ Evite ter multiplos códigos javascript incorporados no meio do _body_. Reagrupe seu código javascript dentro de arquivos externos, no `<head>` ou no fim da sua página (antes do `</body>`).
+* [ ] **Nenhum JavaScript no meio:** ![medium] _(Só vale para website)_ Evite ter multiplos códigos JavaScript incorporados no meio do _body_. Reagrupe seu código JavaScript dentro de arquivos externos, no `<head>` ou no fim da sua página (antes do `</body>`).
 
   _Por que:_
 
@@ -449,9 +449,9 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
   > ⁃ Certifique-se de que todos os seus arquivos são carregados usando `async` ou `deferP e escolha sabiamente o código que será inserido no`<head>`.
 
-  - 📖 [11 Dicas para Otimizar JavaScript e Melhorar o Tempo de Carregamento de Websites](https://www.upwork.com/hiring/development/11-tips-to-optimize-javascript-and-improve-website-loading-speeds/)
+  - 📖 [11 Dicas para Otimizar JavaScript e Melhorar o Tempo de Carregamento de Websites](https://www.upwork.com/hiring/development/11-tips-to-optimize-JavaScript-and-improve-website-loading-speeds/)
 
-* [ ] **JavaScript sem bloqueio:** ![high] Arquivos javascript são carregados assincronamente utilizando atributo `async` ou deferidos com o atributo `defer`.
+* [ ] **JavaScript sem bloqueio:** ![high] Arquivos JavaScript são carregados assincronamente utilizando atributo `async` ou deferidos com o atributo `defer`.
 
   ```html
   <!--  Atributo Defer -->
@@ -463,18 +463,14 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
   _Por que:_
 
-  > Javascript bloqueia o _parse_ normal de um documento HTML, então quando o _parser_ encontra uma _tag_ `<script>` (especialmente se está dentro do `<head>`), ele para para buscar e executa-la. Adicionar `async` ou `defer` é altamente recomendado se seus scripts estão localizados no topo da sua página mas menos importante se estiverem logo antes da _tag_ `</body>`. Mesmo assim é boa prática usar esses atributos para evitar problemas de performance.
+  > JavaScript bloqueia o _parse_ normal de um documento HTML, então quando o _parser_ encontra uma _tag_ `<script>` (especialmente se está dentro do `<head>`), ele para para buscar e executa-la. Adicionar `async` ou `defer` é altamente recomendado se seus scripts estão localizados no topo da sua página mas menos importante se estiverem logo antes da _tag_ `</body>`. Mesmo assim é boa prática usar esses atributos para evitar problemas de performance.
 
   _Como:_
 
   > ⁃ Coloque o atributo `async` (se o script não depende de outros scripts) ou `defer` (se o script depende de outro ou é necessário para outro script).
   > ⁃ Se tiver scripts pequenos, considere deixar _inline_ acima dos scripts assíncronos.
 
-<<<<<<< HEAD
-  - 📖 [Remova JavaScript que Bloqueia a Renderização](https://developers.google.com/speed/docs/insights/BlockingJS)
-=======
   - 📖 [Remova JavaScript que Bloqueia o Render](https://developers.google.com/speed/docs/insights/BlockingJS)
->>>>>>> a6462b86519560708c6aec510bad1dedbf91fd74
 
 * [ ] **Bibliotecas JS Otimizadas e Atualizadas:** ![medium] todas as bibliotecas JavaScript utilizadas no seu projeto são necessárias (dê preferência para JavaScript Puro para funcionalidades simples), atualizadas para a ultima versão e não sobrecarregam o seu JavaScript com métodos desnecessários.
 
@@ -498,25 +494,25 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   _Como:_
 
   > ⁃ Sempre compare e escolha a biblioteca melhor e mais leve para as suas necessidades. Você pode usar ferramentas como [npm trends](http://www.npmtrends.com/) para comparar o número de downloads de pacotes NPM ou [Bundlephobia](https://bundlephobia.com/) para saber o tamanho das suas dependências.
-  
-  - 🛠 [ai/size-limit: Prevent JS libraries bloat. If you accidentally add a massive dependency, Size Limit will throw an error.](https://github.com/ai/size-limit)
-  - 📖 [webpack-bundle-analyzer - npm](https://www.npmjs.com/package/webpack-bundle-analyzer)
-  - 📖 [Size Limit: Make the Web lighter — Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
-- [ ] **JavaScript Profiling:** ![medium] Check for performance problems in your JavaScript files (and CSS too).
+  - 🛠 [ai/size-limit: Impeça Inchaço de bibliotecas JS. Se você acidentalmente incluir uma dependeência gigantesca, o Size Limit vai lançar um erro.](https://github.com/ai/size-limit)
+  - 📖 [webpack-bundle-analyzer - npm](https://www.npmjs.com/package/webpack-bundle-analyzer)
+  - 📖 [Limite de Tamanho: Torne a Web Mais Leve — Crônicas do Marciano, blog do time Evil Martians](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
+
+- [ ] **Perfilamento JavaScript:** ![medium] Confira os problemas de performance dos seus arquivos JavaScript (e CSS também).
 
   _Por que:_
 
-  > JavaScript complexity can slow down runtime performance. Identifing these possible issues are essential to offer the smoothest user experience.
+  > A complexidade do JavaScript pode deixar a performance de execução lenta. Identificar esses possíveis problemas é essencial para oferecer a experieência de usuário mais polida.
 
   _Como:_
 
-  > ⁃ Use the Timeline tool in the Chrome Developer Tool to evaluate scripts events and found the one that may take too much time.
+  > ⁃ Use a ferramenta Linha do Tempo nas Ferramentas de Desenvolvedor do Chrome para analisar os eventos de script e encontrar os que demoram demais.
 
-  - 📖 [Speed Up JavaScript Execution  |  Tools for Web Developers  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)
-  - 📖 [JavaScript Profiling With The Chrome Developer Tools — Smashing Magazine](https://www.smashingmagazine.com/2012/06/javascript-profiling-chrome-developer-tools/)
-  - 📖 [How to Record Heap Snapshots  |  Tools for Web Developers  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots)
-  - 📖 [Chapter 22 - Profiling the Frontend - Blackfire](https://blackfire.io/docs/book/22-frontend-profiling)
+  - 📖 [Acelere a execução de JavaScript  |  Ferramentas para Desenvolvedores Web  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)
+  - 📖 [Perfilamento de JavaScript com as Ferramentas de Desenvolvedor do Chrome — Smashing Magazine](https://www.smashingmagazine.com/2012/06/JavaScript-profiling-chrome-developer-tools/)
+  - 📖 [Como registrar instantâneos de pilha |  Ferramentas para Desenvolvedores Web  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots)
+  - 📖 [Capítulo 22 - Perfilando o Frontend - Blackfire](https://blackfire.io/docs/book/22-frontend-profiling)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -644,7 +640,7 @@ All icons are provided by [Icons8](https://icons8.com/)
 [css]: images/css.png
 [fonts]: images/fonts.png
 [images]: images/images.png
-[javascript]: images/javascript.png
+[javascript]: images/JavaScript.png
 [server-side]: images/server-side.png
 [low]: https://front-end-checklist.now.sh/low.svg
 [medium]: https://front-end-checklist.now.sh/medium.svg
