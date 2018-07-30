@@ -470,31 +470,35 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   > ⁃ Coloque o atributo `async` (se o script não depende de outros scripts) ou `defer` (se o script depende de outro ou é necessário para outro script).
   > ⁃ Se tiver scripts pequenos, considere deixar _inline_ acima dos scripts assíncronos.
 
+<<<<<<< HEAD
   - 📖 [Remova JavaScript que Bloqueia a Renderização](https://developers.google.com/speed/docs/insights/BlockingJS)
+=======
+  - 📖 [Remova JavaScript que Bloqueia o Render](https://developers.google.com/speed/docs/insights/BlockingJS)
+>>>>>>> a6462b86519560708c6aec510bad1dedbf91fd74
 
-* [ ] **Optimized and updated JS libraries:** ![medium] All JavaScript libraries used in your project are necessary (prefer Vanilla Javascript for simple functionalities), updated to their latest version and don't overwhelm your JavaScript with unnecessary methods.
-
-  _Por que:_
-
-  > Most of the time, new versions come with optimization and security fix. You should use the most optimized code to speed up your project and ensure that you'll not slow down your website or app without outdated plugin.
-
-  _Como:_
-
-  > ⁃ If your project use NPM packages, [npm-check](https://www.npmjs.com/package/npm-check) is a pretty interesting library to upgrade / update your librairies.
-
-  - 📖 [You may not need jQuery](http://youmightnotneedjquery.com/)
-  - 📖 [Vanilla JavaScript for building powerful web applications](https://plainjs.com/)
-
-- [ ] **Check dependencies size limit:** ![low] Ensure to use wisely external librairies, most of the time, you can use a lighter library for a same functionnality.
+* [ ] **Bibliotecas JS Otimizadas e Atualizadas:** ![medium] todas as bibliotecas JavaScript utilizadas no seu projeto são necessárias (dê preferência para JavaScript Puro para funcionalidades simples), atualizadas para a ultima versão e não sobrecarregam o seu JavaScript com métodos desnecessários.
 
   _Por que:_
 
-  > You may be tempted to use one of the 745 000 packages you can find on [npm](https://www.npmjs.com/), but you need to choose the best package for your needs. For example, MomentJS is an awesome library but with a lot of methods you may never use, that's why Day.js was created. It's just 2kB vs 16.4kB gz for Moment.
+  > Na maior parte do tempo, versões mais novas têm otimizações e correções de segurança. Você deve usar o código mais otimizado para acelerar o seu projeto e garantir que não vai deixar seu website ou aplicação lento com _plugins_ destualizados.
 
   _Como:_
 
-  > ⁃ Always compare and choose the best and lighter library for your needs. You can also use tools like [npm trends](http://www.npmtrends.com/) to compare NPM package downloads counts or [Bundlephobia](https://bundlephobia.com/) to know the size of your dependencies.
+  > ⁃ Se o seu projeto usa pacotes NPM, [npm-check](https://www.npmjs.com/package/npm-check) é uma biblioteca interessante para atualizar suas bibliotecas.
 
+  - 📖 [Talvez você não precise do jQuery](http://youmightnotneedjquery.com/)
+  - 📖 [JavaScript Puro para construir aplicações web poderosas](https://plainjs.com/)
+
+- [ ] **Confira o limite de tamanho das dependências:** ![low] Faça questão de suar bibliotecas externas sabiamente, muitas vezes você pode usar uma biblioteca mais leve para ter a mesma funcionalidade.
+
+  _Por que:_
+
+  > Talvez você queira usar um dos 745.000 pacotes que você pode encontrar no [npm](https://www.npmjs.com/), mas você deve encontrar o melhor pacote para sua necessidade. Por exemplo, o MomentJS é uma biblioteca maravilhosa mas com muitos métodos que talvez você nunca use, é por isso que o Day.js foi criado. Ele pesa 2kB gz contra 16.4 kB do Moment.
+
+  _Como:_
+
+  > ⁃ Sempre compare e escolha a biblioteca melhor e mais leve para as suas necessidades. Você pode usar ferramentas como [npm trends](http://www.npmtrends.com/) para comparar o número de downloads de pacotes NPM ou [Bundlephobia](https://bundlephobia.com/) para saber o tamanho das suas dependências.
+  
   - 🛠 [ai/size-limit: Prevent JS libraries bloat. If you accidentally add a massive dependency, Size Limit will throw an error.](https://github.com/ai/size-limit)
   - 📖 [webpack-bundle-analyzer - npm](https://www.npmjs.com/package/webpack-bundle-analyzer)
   - 📖 [Size Limit: Make the Web lighter — Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
