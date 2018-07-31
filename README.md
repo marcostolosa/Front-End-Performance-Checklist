@@ -520,57 +520,57 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 ![server-side]
 
-- [ ] **Webpage size < 1500 KB:** ![high] (but ideally < 500 KB) Reduce the size of your page + resources as much as you can.
+- [ ] **Peso da página < 1500 KB:** ![high] (idealmente < 500 KB) Reduza o peso da sua página e recursos o máximo que puder.
 
   _Por que:_
 
-  > Ideally you should try to target < 500 KB but the state of web shows that the median of Kilobytes is around 1500 KB (even on mobile). Depending your target users, connexion, devices, it's important to reduce as much as possible your total Kilobytes to have the best user experience possible.
+  > Idealmente você deve tentar alcançar < 500KB mas análises da web mostram que a média é por volta de 1500KB (até em _mobile_). Dependendo do sua audiência, conexão e aparelhos é importante reduzir tanto quanto possível o total de kilbytes para alcançar a melhor experiência de usuário possível.
 
   _Como:_
 
-  > ⁃ All the rules inside the Front-End Performance Checklist will help you to reduce as much as possible your resources and your code.
+  > ⁃ Todas as regras do Checklist de Performance Front-End te ajudará a reduz ao máximo seus recursos e código.
 
-  - 📖 [Page Weight](https://httparchive.org/reports/page-weight#bytesTotal)
-  - 🛠 [What Does My Site Cost?](https://whatdoesmysitecost.com/)
+  - 📖 [Peso da Página](https://httparchive.org/reports/page-weight#bytesTotal)
+  - 🛠 [Quanto Custa o meu Site?](https://whatdoesmysitecost.com/)
 
-- [ ] **Page load times < 3 seconds:** ![high] Reduce as much as possible your page load times to quickly deliver your content to your users.
+- [ ] **Tempo de carregamento das páginas < 3 segundos:** ![high] Reduza ao máximo o tempo de carregamento das suas páginas para entregar rapidamente o seu conteúdo aos usuários.
 
   _Por que:_
 
-  > Faster your website or app is, less you have probability of bounce increases, in other terms you have less chances to lose your user or future client. Enough researches on the subject prove that point.
+  > Quanto mais rápido o seu site ou app mais for, menor é a probabilidade de _bounces_, em outras palavras você terá menos chance de perder o usuário ou futuro cliente. Várias pesquisas provam isso.
 
   _Como:_
 
-  > ⁃ Use online tools like [Page Speed Insight](https://developers.google.com/speed/pagespeed/insights/) or [WebPageTest](https://www.webpagetest.org/) to analyze what could be slowing you down and use the Front-End Performance Checklist to improve your load times.
+  > ⁃ Use ferramentas online como [Page Speed Insight](https://developers.google.com/speed/pagespeed/insights/) ou [WebPageTest](https://www.webpagetest.org/) para analisar o que pode estar te atrasando e use o Checklist de Performance Front-End para melhorar o tempo de carregamento.
 
-  - 🛠 [Compare your mobile site speed](https://www.thinkwithgoogle.com/feature/mobile/)
-  - 🛠 [Test Your Mobile Website Speed and Performance - Think With Google](https://testmysite.thinkwithgoogle.com/?_ga=1.155316027.1489996091.1482187369)
-  - 📖 [Average Page Load Times for 2018 - How does yours compare? - MachMetrics Speed Blog](https://www.machmetrics.com/speed-blog/average-page-load-times-websites-2018/)
+  - 🛠 [Compare a velocidade do seu site em aparelhos móveis](https://www.thinkwithgoogle.com/feature/mobile/)
+  - 🛠 [Teste a velocidade e performance do seu site - Think With Google](https://testmysite.thinkwithgoogle.com/?_ga=1.155316027.1489996091.1482187369)
+  - 📖 [Tempo médio de carregamento em 2018 - Como está o seu? - MachMetrics Speed Blog](https://www.machmetrics.com/speed-blog/average-page-load-times-websites-2018/)
 
-- [ ] **Time To First Byte < 1.3 seconds:** ![high] Reduce as much as you can the time your browser waits before receiving data.
+- [ ] **Tempo até o primeiro byte < 1.3 segundos:** ![high] Reduza ao máximo o tempo que o navegador espera até receber dados.
 
-  - 📖 [What is Waiting (TTFB) in DevTools, and what to do about it](https://scaleyourcode.com/blog/article/27)
-  - 📖 [Monitoring your servers with free tools is easy](https://scaleyourcode.com/blog/article/7)
+  - 📖 [O que é a espera (TTFB) no DevTools, e o que fazer sobre ela](https://scaleyourcode.com/blog/article/27)
+  - 📖 [Monitorar os seus servidores com ferramentas grátis é facil](https://scaleyourcode.com/blog/article/7)
 
-* [ ] **Cookie size:** ![medium] If you are using cookies be sure each cookie doesn't exceed 4096 bytes and your domain name doesn't have more than 20 cookies.
+* [ ] **Tamanho dos _cookies_:** ![medium] Se estiver usando _cookies_ certifique-se de que cada cookie não ultrapassa 4096 bytes e o seu domínio não possui mais de 20 _cookies_.
 
   _Por que:_
 
-  > cookies is exchanged in the HTTP headers between web servers and browsers. It's important to keep the size of cookies as low as possible to minimize the impact on the user's response time.
+  > _cookies_ são trocados nos _headers_ HTTP entre os servidores e navegadores. É importante manter o tamanho dos cookies o menor possível para reduzir o impacto no tempo de carregamento para o usuário.
 
   _Como:_
 
-  > ⁃ Eliminate unnecessary cookies
+  > ⁃ Elimine _cookies_ desnecessários.
 
-  - 📖 [Cookie specification: RFC 6265](https://tools.ietf.org/html/rfc6265)
+  - 📖 [Especificação do Cookie: RFC 6265](https://tools.ietf.org/html/rfc6265)
   - 📖 [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
-  - 🛠 [Browser Cookie Limits](http://browsercookielimits.squawky.net/)
-  - 📖 [Website Performance: Cookies Don't Taste So Good - Monitis Blog](http://www.monitis.com/blog/website-performance-cookies-dont-taste-so-good/)
-  - 📖 [Google's Web Performance Best Practices #3: Minimize Request Overhead - GlobalDots Blog](https://www.globaldots.com/googles-web-performance-best-practices-3-minimize-request-overhead/)
+  - 🛠 [Limites de Cookies do Navegador](http://browsercookielimits.squawky.net/)
+  - 📖 [Performance de Site: _Cookies_ não são tão gostosos - Monitis Blog](http://www.monitis.com/blog/website-performance-cookies-dont-taste-so-good/)
+  - 📖 [Melhores Práticas de Performance Web do Google #3: Minimize Sobrecarga de Requisição - GlobalDots Blog](https://www.globaldots.com/googles-web-performance-best-practices-3-minimize-request-overhead/)
 
-- [ ] **Minimizing HTTP requests:** ![high] Always ensure that every file requested are essential for you website or application.
+- [ ] **Minimize Requisições HTTP:** ![high] Sempre se certifique que todos os arquivos requisitados são essenciais para o seu site ou aplicação.
 
-- [ ] **Use a CDN to deliver your assets:** ![medium] Use a CDN to deliver faster your content over the world.
+- [ ] **Use uma CDN Para entregar seus ativos:** ![medium] Use uma CDN para entregar mais rápido seu conteúdo pelo mundo.
 
 * 📖 [10 Tips to Optimize CDN Performance - CDN Planet](https://www.cdnplanet.com/blog/10-tips-optimize-cdn-performance/)
 * 📖 [HTTP Caching  |  Web Fundamentals  |  Google Developers](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching)
