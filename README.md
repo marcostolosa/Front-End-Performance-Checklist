@@ -285,7 +285,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   - 📖 [CSS Stats](https://cssstats.com/)
   - 🛠 [macbre/analyze-css: Analizador de complexidade e performance de seletores CSS](https://github.com/macbre/analyze-css)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ Topo](#table-of-contents)**
 
 ## Fontes
 
@@ -514,7 +514,7 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
   - 📖 [Como registrar instantâneos de pilha |  Ferramentas para Desenvolvedores Web  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots)
   - 📖 [Capítulo 22 - Perfilando o Frontend - Blackfire](https://blackfire.io/docs/book/22-frontend-profiling)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ Topo](#table-of-contents)**
 
 ## Servidor
 
@@ -572,20 +572,20 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 - [ ] **Use uma CDN Para entregar seus ativos:** ![medium] Use uma CDN para entregar mais rápido seu conteúdo pelo mundo.
 
-* 📖 [10 Tips to Optimize CDN Performance - CDN Planet](https://www.cdnplanet.com/blog/10-tips-optimize-cdn-performance/)
-* 📖 [HTTP Caching  |  Web Fundamentals  |  Google Developers](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching)
+* 📖 [10 Dicas para Otimizar Performance de CDN - CDN Planet](https://www.cdnplanet.com/blog/10-tips-optimize-cdn-performance/)
+* 📖 [Cacheamento HTTP  |  Fundamentos Web  |  Google Developers](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching)
 
-- [ ] **Serve files from the same protocol:** ![high] Avoid having your website using HTTPS and serve files coming from source using HTTP.
+- [ ] **Entregue arquivos com o mesmo protocolo:** ![high] Evite entregar arquivos de fontes usando HTTP se seu site usar HTTPS.
 
-- [ ] **Serve reachable files:** ![high] Avoid requesting unreachable files (404).
+- [ ] **Entregue arquivos existentes:** ![high] Evite solicitar arquivos que não podem ser acessados (404).
 
-- [ ] **Set HTTP cache headers properly:** ![high] Set HTTP headers to avoid expensive number of roundtrips between your browser and the server.
+- [ ] **Defina corretamente os cabeçalhos de cache HTTP:** ![high] Defina cabeçalhos HTTP para evitar voltas custosas entre o seu navegador e o servidor.
 
-- [ ] **GZIP compression is enable:** ![high]
+- [ ] **Compressão GZIP está ativada:** ![high]
 
-* 📖 [Check GZIP compression](https://checkgzipcompression.com/)
+* 📖 [Verifique compressão GZIP](https://checkgzipcompression.com/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ Topo](#table-of-contents)**
 
 ---
 
@@ -595,25 +595,25 @@ Lista de ferramentas que você pode usar para testar ou monitorar o seu website 
 
 ### React
 
-- 📖 [Optimizing Performance - React](https://reactjs.org/docs/optimizing-performance.html)
-- 📖 [React image manipulation | Cloudinary](https://cloudinary.com/documentation/react_image_manipulation)
-- 📖 [Debugging React performance with React 16 and Chrome Devtools.](https://building.calibreapp.com/debugging-react-performance-with-react-16-and-chrome-devtools-c90698a522ad)
+- 📖 [Otimizando Performance - React](https://reactjs.org/docs/optimizing-performance.html)
+- 📖 [Manipulação de Imagens no React | Cloudinary](https://cloudinary.com/documentation/react_image_manipulation)
+- 📖 [Debugando performance do React com React 16 e ferramentas de desenvolvedor do Chrome.](https://building.calibreapp.com/debugging-react-performance-with-react-16-and-chrome-devtools-c90698a522ad)
 
 ---
 
 ## Traduções
 
-The Front-End Performance Checklist wants to also be available in other languages! Don't hesitate to submit your contribution!
+O Checklist de Performance Front-End também deseja estar disponível em outras línguas!
 
 ## Contribuir
 
-**Open an issue or a pull request to suggest changes or additions.**
+**Abra um issue ou um PR para mandar sugestões, alterações ou inclusões.**
 
 ## Suporte
 
-If you have any question or suggestion, don't hesitate to use Gitter or Twitter:
+Se tiver qualquer dúvida ou sugestão, mande sua dúvida pelo Gitter or Twitter:
 
-- [Chat on Gitter](https://gitter.im/Front-End-Checklist/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+- [Chat no Gitter](https://gitter.im/Front-End-Checklist/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 - [Facebook](https://www.facebook.com/frontendchecklist/)
 - [Twitter](https://twitter.com/thedaviddias)
 
@@ -625,15 +625,15 @@ If you have any question or suggestion, don't hesitate to use Gitter or Twitter:
 
 ## Contribuintes
 
-This project exists thanks to all the people who contribute. [[Contribute]](.github/CONTRIBUTING.md).
+Esse projeto existe graças à todas as pessoas que contribuem. [[Contribua]](.github/CONTRIBUTING.md).
 
 ## Licensa de Uso
 
 [MIT](LICENCE.md)
 
-All icons are provided by [Icons8](https://icons8.com/)
+Todos os ícones fornecidos por [Icons8](https://icons8.com/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ Topo](#table-of-contents)**
 
 [logo]: images/logo-front-end-performance-checklist.jpg
 [html]: images/html.png
